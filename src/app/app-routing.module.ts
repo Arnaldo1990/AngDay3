@@ -10,6 +10,8 @@ const routes: Routes = [{
   path: "pets", component: PetsComponent
 },{
   path: "cart", component: CartsComponent
+},{
+  path: "**", redirectTo: ""
 }];
 
 @NgModule({
