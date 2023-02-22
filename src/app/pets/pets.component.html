@@ -1,1 +1,17 @@
-<p>pets works!</p>
+<h1>Petlist</h1>
+<div class="row row-cols-3">
+    <div *ngFor="let val of products; index as i">
+        <div class="card" style="width: 18rem;">
+            <img src="{{val.pic}}" class="card-img-top" alt="{{val.name}}">
+            <div class="card-body">
+                <h5 class="card-title">{{val.name}}</h5>
+                <p *ngIf="val.description"> Description: {{val.description}}</p>
+                <p class="card-text">{{val.price}}</p>
+                <p>{{i}}</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                <p class="btn btn-success">Details</p>
+            </div>
+        </div>
+    </div>
+
+</div>
