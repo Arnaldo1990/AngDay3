@@ -12,7 +12,7 @@ const routes: Routes = [{
 },{
   path: "cart", component: CartsComponent
 },{
-  path: "pets/:productID", component: PetDetailsComponent
+  path: "pets/:id", component: PetDetailsComponent
 },{
   path: "**", redirectTo: ""
 }];

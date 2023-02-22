@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap, Params } from '@angular/router';
+import { ActivatedRoute, ParamMap, Params } from '@angular/router';
 import { products } from '../product';
 import { IProduct } from '../Iproduct';
 
@@ -19,8 +19,7 @@ ngOnInit(): void {
   
   this.route.params.subscribe((params: Params) => {
 this.id = +params[this.id];
-this.product = products[this.id];
-  // this.product = params['name'];
+  this.product = products[this.id];
 
   });
 }
