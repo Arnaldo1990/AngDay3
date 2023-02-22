@@ -7,9 +7,7 @@
                 <h5 class="card-title">{{val.name}}</h5>
                 <p *ngIf="val.description"> Description: {{val.description}}</p>
                 <p class="card-text">{{val.price}}</p>
-                <p>{{i}}</p>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                <p class="btn btn-success">Details</p>
+                <a class="btn btn-success" routerLink="/pets/{{i}}">Details</a>
             </div>
         </div>
     </div>
