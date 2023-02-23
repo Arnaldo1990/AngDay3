@@ -18,7 +18,8 @@ constructor( private route: ActivatedRoute) {
 ngOnInit(): void {
   
   this.route.params.subscribe((params: Params) => {
-this.id = +params[this.id];
+this.id = +params["id"];
+console.log(this.id)
   this.product = products[this.id];
 
   });
