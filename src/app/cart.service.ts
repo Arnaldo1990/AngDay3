@@ -5,11 +5,11 @@ import { IProduct } from './Iproduct';
   providedIn: 'root'
 })
 export class CartService {
-cart : Array <IProduct> = [];
+cart :IProduct[] = [];
   constructor() { }
 
-  addToCart(x: IProduct) {
-this.cart.push(x);
+  addToCart(product: IProduct) {
+    this.cart.push(product);
   }
 
   getCart() {
